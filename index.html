@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hrithik Manoj Nair</h1>
+        <nav>
+            <div class ="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class ="nav__link">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#resume">My Resume/CV</a></li>
+                <li><a href="#social">Social</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>A man with a vision currently on a mission. Hola! Myself Hrithik Manoj Nair. A technology and gaming enthusiast currently pursuing BTech in
+        Information Technology at <a href = "http://www.gecbh.ac.in/" target ="_blank">GEC Barton Hill</a>. 
+        </p>
+
+        <p>
+            My experience in the technological and gaming worlds has been nothing short of thrilling. I have a deep respect for the limitless possibilities that technology offers, from my first days of messing with computers to my exploration of the immersive worlds 
+            of video games.
+            <br>
+            One aspect that has particularly captured my attention is the captivating realm of Artificial Intelligence. 
+            The idea that machines can simulate human intelligence and perform tasks that were once considered science fiction has always fascinated me. I find myself deeply engrossed in the world of AI, constantly exploring its vast possibilities.
+        </p>
+
+        <p>
+            I find the complex network of rules and policies that mold our society to be equally fascinating as technology. 
+            I regularly participate in conversations and provide viewpoints on these issues because I want to help bring about change.
+        </p>
+
+        <p>
+            International affairs and issues of national importance are other interests of mine. 
+            I'm devoted to learning how our country functions intricately and how it interacts with the rest of the world.
+        </p>
+
+        <p>
+            Above everything else, I am a devoted citizen of my country, India(🇮🇳). 
+            I work to have a significant impact on the world around me using a combination of technology, intelligence, and a sense of duty.
+        </p>
+    </section> 
+    
+    <section id="resume">
+        <h2>Resume</h2>
+        <p><a href ="https://drive.google.com/file/d/1367iME5l14nI8md44TIMaKJXHOXJhoco/view" target ="_blank">Click here to view!</a></p>
+        
+    </section>
+    
+    <section id="social">
+        <h2>Social</h2>
+        <ul><a href ="https://twitter.com/iam_hrithiknair" target ="_blank">Twitter/X</a></ul>
+        <ul><a href ="https://www.instagram.com/iam_hrithik_nair/" target ="_blank">Instagram</a></ul>
+        <ul><a href ="https://www.linkedin.com/in/hrithik-manoj-nair-41b378226/" target ="_blank">LinkedIn</a></ul>
+        <ul><a href ="https://github.com/iamhrithiknair" target ="_blank">GitHub</a></ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+            ✉️ strictlyprofessionalnair@gmail.com
+            <br>
+            📞 7994933846
+        </p>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hrithik Manoj Nair</p>
+    </footer>
+
+    <script>
+        // this is for navigation menu
+        navToggle = document.querySelector('.nav-toggle');
+        navLinks = document.querySelectorAll('.nav__link');
+
+        navToggle.addEventListener('click', () => {
+        document.body.classList.toggle('nav-open');
+    });
+
+        navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    });
+});
+
+    </script>
+</body>
+</html>
